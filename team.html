@@ -16,7 +16,7 @@ layout: default
 
             <li class="collection-item avatar">
                 {% if person.image %}
-                <img src="/assets/images/{{person.image}}" alt="" class="circle">
+                <img src="{{ baseurl }}assets/images/{{person.image}}" alt="" class="circle">
                 {% else %}
                 <i class="icon ion-ios-contact circle green"></i>
                 {% endif %}
