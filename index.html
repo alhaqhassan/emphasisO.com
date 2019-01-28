@@ -11,7 +11,7 @@ layout: default
         <div class="center-hv full-page">
             <div class="center">
                 <h2 class="center-hv">
-                    <img src="/assets/images/cie-logo.png" alt="" style="height: 3rem; width: auto">
+                    <img src="{{ baseurl }}assets/images/cie-logo.png" alt="" style="height: 3rem; width: auto">
                     &nbsp;&nbsp;
                     <span>
                         Centre for
@@ -21,7 +21,7 @@ layout: default
                     </b>
                     </span>
                     &nbsp;&nbsp;
-                    <img src="/assets/images/jmi-logo.png" alt="" style="height: 3rem; width: auto">
+                    <img src="{{ baseurl }}assets/images/jmi-logo.png" alt="" style="height: 3rem; width: auto">
                 </h2>
                 <div>
                     Presents
@@ -31,7 +31,7 @@ layout: default
                 <h1 class="hide">
                     Emphasiso E-Summit 2019
                 </h1>
-                <img src="/assets/images/emphasiso-logo-full.png" alt="" class="full-image">
+                <img src="{{ baseurl }}assets/images/emphasiso-logo-full.png" alt="" class="full-image">
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@ layout: default
             <ul class="collection">
                 {% for partner in site.data.media-partners %}
                 <li class="collection-item avatar">
-                    <img src="/assets/images/{{partner.image}}" alt="" class="circle">
+                    <img src="{{ baseurl }}assets/images/{{partner.image}}" alt="" class="circle">
                     <span class="title" style="font-size: 1.5rem">{{partner.title}}</span>
                     <p style="font-weight: 300">
                         {% for link in partner.links %}

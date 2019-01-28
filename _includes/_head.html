@@ -7,6 +7,6 @@
     <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | prepend: site.baseurl }}">
 
     {% include _css-links.html %}
-    {% if page.css %}<link rel="stylesheet" href="{{page.baseurl}}/assets/css/{{page.css}}">{% endif %}
+    {% if page.css %}<link rel="stylesheet" href="{{page.baseurl}}{{ baseurl }}assets/css/{{page.css}}">{% endif %}
 
 </head>
